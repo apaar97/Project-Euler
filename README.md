@@ -1,5 +1,5 @@
 ###	Project Euler
 
-Python solutions for problems ###1 to ###10 
+Python solutions 
 
 Project Euler : https://projecteuler.net/
