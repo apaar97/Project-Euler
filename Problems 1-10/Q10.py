@@ -12,5 +12,6 @@ def gen_prime(limit):
                 j += i
         i += 1
 
+
 N = 2000000
 print(sum(gen_prime(N)))
