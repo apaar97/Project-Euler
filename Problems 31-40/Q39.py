@@ -1,4 +1,4 @@
-#   Special Pythagorean triplet
+#   Integer right triangles
 
 import math
 
@@ -17,6 +17,7 @@ import math
 
 
 def f(sum):
+    cnt = 0
     limit = int(math.sqrt(sum // 2))
     for m in range(2, limit + 1):
         if sum // 2 % m == 0:
@@ -26,13 +27,16 @@ def f(sum):
                 k = m + 2
             while k < 2 * m and k <= sum // (2 * m):
                 if (sum // 2 * m) % k == 0 and math.gcd(m, k) == 1:
-                    n = k - m
-                    d = sum // (2 * k * m)
-                    a = d * (m ** 2 - n ** 2)
-                    b = d * (2 * m * n)
-                    c = d * (m ** 2 + n ** 2)
-                    return a * b * c
+                    cnt += 1
                 k += 2
+    return cnt
 
 
-print(f(1000))
+ans = 0
+max = 0
+for i in range(1, 1001):
+    sol = f(i)
+    if sol > max:
+        max = sol
+        ans = i
+print(ans)
