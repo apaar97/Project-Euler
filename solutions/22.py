@@ -1,6 +1,6 @@
 #   Names scores
 
-with open('input22.txt', 'r') as f:
+with open('inputs/22.txt', 'r') as f:
     a = (f.read().strip().split(','))
 f.close()
 a.sort()

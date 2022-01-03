@@ -7,7 +7,7 @@ def check_square(n):
     return int(math.sqrt(n)) ** 2 == n
 
 
-with open('input42.txt', 'r') as f:
+with open('inputs/42.txt', 'r') as f:
     a = (f.read().strip().split(','))
 f.close()
 ans = 0

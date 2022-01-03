@@ -1,7 +1,7 @@
 #   Maximum path sum I
 
 a = []
-with open('input18.txt', 'r') as f:
+with open('inputs/18.txt', 'r') as f:
     for line in f:
         a.append([int(x) for x in line.strip().split(' ')])
 
