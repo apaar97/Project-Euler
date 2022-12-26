@@ -1,6 +1,7 @@
-<img src="https://projecteuler.net/profile/apaar97.png">
-<h2>Project Euler</h2>
+## Project Euler
 
-Python code solutions to [Project Euler](https://projecteuler.net/archives) problems.
+_Python code solutions to [Project Euler](https://projecteuler.net/archives) problems_
+
+<img src="https://projecteuler.net/profile/apaar97.png">
 
 
